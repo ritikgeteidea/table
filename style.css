@@ -167,6 +167,8 @@ th.srNo {
 }
 
 table.table.table-borderless {
+  overflow-y:scroll;
+  display:block;
   margin-top: 20px;
   width: 100%;
   margin-bottom: 30px;
@@ -186,34 +188,4 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-
-@media (max-width:604px){
-  .table-content{
-
-width: 100%;
-
-  }
-
-  td,th{
-    font-size: .8rem;
-  }
-}
-
-
-@media (max-width:500px){
-
-
-  td,th{
-    font-size: .6rem;
-  }
-}
-
-@media (max-width:420px){
-
-
-  td,th{
-    font-size: .4rem;
-  }
 }
