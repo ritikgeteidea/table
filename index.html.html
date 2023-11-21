@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-e6mzVZSWDq3ldJO0EXfSFve+zjnHX35C6VWBO5sTI4UZjYpVte0ncEf1A0xu7XSW" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title> Admin Dashboard</title>
+
+</head>
+<body style="background-color: #EAECF5;">
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+<nav class="col-md-2 d-none d-md-block sidebar">
+            <div class="sidebar-sticky">
+
+                <ul class="nav flex-column">
+                    
+                    <li class="nav-item logo">
+                        <a class="nav-link" href="#">
+                            <img src="img1.png" alt="Image 1" style="width: 107px; height: 93px; flex-shrink: 0;"/>
+                                </a>
+                    </li>
+                
+                <li class="nav-item side-nav home">
+                        <button class="nav-link" href="#">
+                            <i >
+                                <img src="Assets/Home.svg"> 
+                            </i> 
+                            My Kids
+                        </button>
+                    </li>
+
+                    <li class="nav-item side-nav graduation">
+                <button class="nav-link" href="#">
+                            <i >
+                                <img src="Assets/Graduation.svg">
+
+                            </i> 
+                            My Students
+                        </button>
+                    </li>
+
+                    <li class="nav-item side-nav quizes">
+                        <button class="nav-link" href="#">
+                            <i >
+                                <img src="Assets/Quizes.svg">
+
+                            </i> 
+                            Quizzes
+                        </button>
+                    </li>
+
+                    <li class="nav-item side-nav notification">
+                        <button class="nav-link" href="#">
+                            <i >
+                                <img src="Assets/Notification.svg">
+
+                            </i> 
+                            Notifications
+                        </button>
+                    </li>
+
+                    <li class="col-md-2 nav-item  fixed-bottom ">
+                        <div class="user-info">
+                            <img src="Assets/Avtar.png"  style="width: 60px; height: 60px; flex-shrink: 0;"/>
+                            <div class="user-details">
+                                <p class="username">Username</p>
+                                <p class="niche-line">user@example.com</p>
+                            </div>
+                            <div class="logout">
+                            <i><img style="width: px;" src="Assets/Logout.svg" alt=""></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 main-content">
+
+
+             <div class="header">
+            <h2>All Quizzes</h2>
+            <button type="button" class="btn btn-primary add-quiz">+ Add Quiz</button>
+
+        </div>
+
+        <div class="row-md-12 table-content">
+            
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                      <th scope="col" class="srNo">Sr. No.</th>
+                      <th scope="col">Quiz</th>
+                      <th scope="col">Quiz Details</th>
+                      <th scope="col">Attempts</th>
+                      <th scope="col">Edit</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="srNo">1</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="published">published</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="srNo">2</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="unpublished">draft</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="srNo">3</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="published">published</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="srNo">4</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="unpublished">draft</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="srNo">5</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="published">published</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="srNo">6</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="unpublished">draft</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="srNo">7</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="published">published</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="srNo">8</th>
+                      <td>Krishna</td>
+                      <td>6 Questions</td>
+                      <td>66</td>
+                      <td><i class="bi bi-pencil-square"></i></td>
+                      <td class="unpublished">draft</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="srNo">9</th>
+                        <td>Krishna</td>
+                        <td>6 Questions</td>
+                        <td>66</td>
+                        <td><i class="bi bi-pencil-square"></i></td>
+                        <td class="published">published</td>
+                      </tr>
+                    <tr>
+                        <th scope="row" class="srNo">10</th>
+                        <td>Krishna</td>
+                        <td>6 Questions</td>
+                        <td>66</td>
+                        <td><i class="bi bi-pencil-square"></i></td>
+                        <td class="unpublished">draft</td>
+                      </tr>
+                      <tr>
+                  </tbody>
+              </table>
+
+              <nav aria-label="Page navigation example  page-nav">
+                <ul class="pagination">
+                    <div class="previous">
+                  <li class="page-item"><a class="page-link" href="#"><i class="bi bi-arrow-left"></i> Previous</a></li>
+                    </div>
+
+                  <div class="pageNum">
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  </div>
+                  
+                  <div class="next">
+                  <li class="page-item"><a class="page-link" href="#">Next <i class="bi bi-arrow-right"></i> </a> </li>
+                
+                  </div>
+                
+            </ul>
+              </nav>
+
+</div>
+
+
+
+              
+
+
+
+
+
+
+            <!-- <h6>to the yuva quest.</h6></p> -->
+
+            
+            <!-- Cards -->
+
+            <!-- <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card" >
+                        <div class="card-body">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                                <rect width="25" height="23" rx="5" fill="url(#paint0_linear_512_114)"/>
+                                <path d="M13 6C13.6962 6 14.3639 6.27974 14.8562 6.77768C15.3484 7.27562 15.625 7.95098 15.625 8.65517C15.625 9.35937 15.3484 10.0347 14.8562 10.5327C14.3639 11.0306 13.6962 11.3103 13 11.3103C12.3038 11.3103 11.6361 11.0306 11.1438 10.5327C10.6516 10.0347 10.375 9.35937 10.375 8.65517C10.375 7.95098 10.6516 7.27562 11.1438 6.77768C11.6361 6.27974 12.3038 6 13 6ZM7.75 7.89655C8.17 7.89655 8.56 8.01034 8.8975 8.21517C8.785 9.3 9.1 10.3772 9.745 11.2193C9.37 11.9476 8.62 12.4483 7.75 12.4483C7.15326 12.4483 6.58097 12.2085 6.15901 11.7817C5.73705 11.3549 5.5 10.776 5.5 10.1724C5.5 9.56882 5.73705 8.98994 6.15901 8.56314C6.58097 8.13633 7.15326 7.89655 7.75 7.89655ZM18.25 7.89655C18.8467 7.89655 19.419 8.13633 19.841 8.56314C20.2629 8.98994 20.5 9.56882 20.5 10.1724C20.5 10.776 20.2629 11.3549 19.841 11.7817C19.419 12.2085 18.8467 12.4483 18.25 12.4483C17.38 12.4483 16.63 11.9476 16.255 11.2193C16.9089 10.3654 17.2124 9.28953 17.1025 8.21517C17.44 8.01034 17.83 7.89655 18.25 7.89655ZM8.125 15.6724C8.125 14.1021 10.3075 12.8276 13 12.8276C15.6925 12.8276 17.875 14.1021 17.875 15.6724V17H8.125V15.6724ZM4 17V15.8621C4 14.8076 5.4175 13.92 7.3375 13.6621C6.895 14.1779 6.625 14.891 6.625 15.6724V17H4ZM22 17H19.375V15.6724C19.375 14.891 19.105 14.1779 18.6625 13.6621C20.5825 13.92 22 14.8076 22 15.8621V17Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_512_114" x1="12.5" y1="0" x2="12.5" y2="23" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FBC004"/>
+                                <stop offset="1" stop-color="#FE8E00"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <h3 class="card-title" >155</h3>
+                            <p class="niche-line">Number of Students</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-md-4 mb-4">
+                    <div class="card" >
+                        <div class="card-body">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                                <rect width="25" height="23" rx="5" fill="url(#paint0_linear_516_208)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2569 14.5193H10.0247C9.24532 14.5193 8.50624 14.8655 8.00731 15.4642L7.30684 16.3048C6.59417 17.16 7.2023 18.4583 8.31552 18.4583H17.152C18.2652 18.4583 18.8733 17.16 18.1606 16.3048L17.4602 15.4642C16.9612 14.8655 16.2222 14.5193 15.4428 14.5193H14.2109V15.5041C14.2109 16.3199 13.5495 16.9812 12.7337 16.9812C11.9179 16.9812 11.2566 16.3199 11.2566 15.5041L11.2569 14.5193Z" fill="white"/>
+                                <path d="M13.2258 15.5041C13.2258 15.776 13.0054 15.9965 12.7335 15.9965C12.4615 15.9965 12.2411 15.776 12.2411 15.5041L12.2443 6.31301C12.2443 5.58785 12.8321 5 13.5573 5H17.0906C17.5786 5 17.896 5.51359 17.6778 5.9501L16.9866 7.33242C16.8942 7.51724 16.8942 7.73479 16.9866 7.91962L17.6778 9.30193C17.896 9.73845 17.5786 10.252 17.0906 10.252H13.2258V15.5041Z" fill="white"/>
+                                <defs>
+                                  <linearGradient id="paint0_linear_516_208" x1="12.5" y1="0" x2="12.5" y2="23" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FBC004"/>
+                                    <stop offset="1" stop-color="#FE8E00"/>
+                                  </linearGradient>
+                                </defs>
+                              </svg>
+                            <h3 class="card-title" >40</h3>
+                            <p class="niche-line" >Total Quests Added</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" >
+                        <div class="card-body">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                                <rect width="25" height="23" rx="5" fill="url(#paint0_linear_512_114)"/>
+                                <path d="M13 6C13.6962 6 14.3639 6.27974 14.8562 6.77768C15.3484 7.27562 15.625 7.95098 15.625 8.65517C15.625 9.35937 15.3484 10.0347 14.8562 10.5327C14.3639 11.0306 13.6962 11.3103 13 11.3103C12.3038 11.3103 11.6361 11.0306 11.1438 10.5327C10.6516 10.0347 10.375 9.35937 10.375 8.65517C10.375 7.95098 10.6516 7.27562 11.1438 6.77768C11.6361 6.27974 12.3038 6 13 6ZM7.75 7.89655C8.17 7.89655 8.56 8.01034 8.8975 8.21517C8.785 9.3 9.1 10.3772 9.745 11.2193C9.37 11.9476 8.62 12.4483 7.75 12.4483C7.15326 12.4483 6.58097 12.2085 6.15901 11.7817C5.73705 11.3549 5.5 10.776 5.5 10.1724C5.5 9.56882 5.73705 8.98994 6.15901 8.56314C6.58097 8.13633 7.15326 7.89655 7.75 7.89655ZM18.25 7.89655C18.8467 7.89655 19.419 8.13633 19.841 8.56314C20.2629 8.98994 20.5 9.56882 20.5 10.1724C20.5 10.776 20.2629 11.3549 19.841 11.7817C19.419 12.2085 18.8467 12.4483 18.25 12.4483C17.38 12.4483 16.63 11.9476 16.255 11.2193C16.9089 10.3654 17.2124 9.28953 17.1025 8.21517C17.44 8.01034 17.83 7.89655 18.25 7.89655ZM8.125 15.6724C8.125 14.1021 10.3075 12.8276 13 12.8276C15.6925 12.8276 17.875 14.1021 17.875 15.6724V17H8.125V15.6724ZM4 17V15.8621C4 14.8076 5.4175 13.92 7.3375 13.6621C6.895 14.1779 6.625 14.891 6.625 15.6724V17H4ZM22 17H19.375V15.6724C19.375 14.891 19.105 14.1779 18.6625 13.6621C20.5825 13.92 22 14.8076 22 15.8621V17Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_512_114" x1="12.5" y1="0" x2="12.5" y2="23" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FBC004"/>
+                                <stop offset="1" stop-color="#FE8E00"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            <h3 class="card-title" >05</h3>
+                            <p class="niche-line">Total schools enrolled</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-12">
+                    <div class="card" style="background: #444CE7;">
+                        <div class="card-body" style="color: #ffffff;">
+                            <div class="row">
+                                <div class="col-md-6 mb-6"> -->
+                                    <!-- User information section -->
+                                 <br>
+            <!-- <div style ="display:flex; flex-direction:column; justify-content:center;">
+                                    <h5 class="card-title">Create Quiz</h5>
+                                    <p class="card-text">Create quiz to test your students Fun & Education.</p>
+                                    <button class="buttonji" onclick="createAccount()">Create Now</button>
+                                </div> </div>
+                                <div class="col-md-6 mb-6">
+                                    <img src="books.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        <br>
+        <div class="row">
+            <div class="col-md-6 mb-6">
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Add</h5>
+                        <p class="niche-line">Quickly Add Quests to the series database</p>
+                        <button class="buttonji" onclick="createAccount()">Add New  Quests</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Engagement Metrics</h5>
+                        <p class="niche-line">Quickly Add Quests to the series database</p>
+                        <button class="buttonji" onclick="createAccount()">Check Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
+        
+    </div> --> <!-- col8 khtm wala div -->
+        <!-- <div class="col-md-4 mb-4" style="margin-top: 26.5px;">
+        <div class="input-group mb-3" style="margin-bottom: 0.5rem!important;">
+           <div class="search-box"><span class="seach-icon"><i class="fa fa-search" aria-hidden="true"></i></span> <input type="text" class="form-control" placeholder="Search Quests" aria-label="Search" aria-describedby="button-addon2"></div>
+                   </div>
+                   <br>
+        <div class="row">
+            <div class="col-md-12 mb-12">
+                <div class="card" id="activity" >
+                        <div class="card-body d-flex justify-content-between align-items-center" style="padding-bottom:0;">
+                            <div>
+                                <h5 class="card-title">Current Activity</h5>
+                            </div>
+                            <div>
+                                <p style="color: #667085;
+                                font-family: Rubik;
+                                font-size: 8px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;">Updated 5 mins ago</p>
+                            </div>
+                        </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="padding:0;">
+                                <div>
+                                    <img src="user1.jpg" alt="User 1" style="width: 50px; height: 50px; border-radius: 50%;">
+                                </div>
+                                <div class="">
+								<div class="ishan-heading">Ishaan Naik</div>
+								<div class="cont-box"><p class="niche-line">Completed Murugen</p></div>
+								</div>
+                                <p style="color:#FFD233;" class="niche-line"><i class="fa fa-clock-o" aria-hidden="true"></i> 2hrs ago</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="padding:0;">
+                                <div>
+                                    <img src="user2.jpg" alt="User 2" style="width: 50px; height: 50px; border-radius: 50%;">
+                                </div>
+                                <div class="">
+                                    <div class="ishan-heading">Ishaan Naik</div>
+                                    <div class="cont-box"><p class="niche-line">Completed Murugen</p></div>
+                                    </div>
+                                                                <p style="color:#FFD233;" class="niche-line"><i class="fa fa-clock-o" aria-hidden="true"></i> 2hrs ago</p>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="padding:0;">
+                                <div>
+                                    <img src="user3.jpg" alt="User 3" style="width: 50px; height: 50px; border-radius: 50%;">
+                                </div>
+                                <div class="">
+                                    <div class="ishan-heading">Ishaan Naik</div>
+                                    <div class="cont-box"><p class="niche-line">Completed Murugen</p></div>
+                                    </div>
+                                                                <p style="color:#FFD233;" class="niche-line"><i class="fa fa-clock-o" aria-hidden="true"></i> 2hrs ago</p>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="padding:0;">
+                                <div>
+                                    <img src="user4.jpg" alt="User 4" style="width: 50px; height: 50px; border-radius: 50%;">
+                                </div>
+                                <div class="">
+                                    <div class="ishan-heading">Ishaan Naik</div>
+                                    <div class="cont-box"><p class="niche-line">Completed Murugen</p></div>
+                                    </div>
+                                 <p style="color:#FFD233;" class="niche-line"><i class="fa fa-clock-o" aria-hidden="true"></i> 2hrs ago</p>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+<br>
+            <div class="row">
+                <div class="col-md-12 mb-12">
+                    <div class="card" id="activity" style="border-radius: 10px;
+                    background: #1E1D38;" >
+                        <div class="card-body" style="color:#fff;">
+                            <h5 class="card-title">Support Tickets</h5>
+                                                        <p >Help customer resolve there problem</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+    </div> -->
+   
+
+        </main>
+  
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
