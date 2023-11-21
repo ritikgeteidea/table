@@ -193,7 +193,7 @@ th {
 }
 
 
-@media (max-width:700px){
+@media (max-width:800px){
 
 
   table.table.table-borderless {
@@ -204,6 +204,9 @@ th {
   .table-content{
     width: 110%;
   }
+  td {
+    min-width: 130px;
+}
   
   nav {
     width: 100%;
